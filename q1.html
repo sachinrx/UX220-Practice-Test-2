@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>Question 1</title>
     <!-- Add a contact phone number to the included form. Be sure to use the correct type for your input. 
     Make the input match the formatting on the rest of the fields. Make sure that the input type for the 
     email is also correct. Use the "required" attribute correctly to make sure that all the inputs on the 
@@ -27,19 +29,23 @@
                 <form action="https://api.formbucket.com/f/c2K3QTQ" method="post">
                     <div class="form-group">
                         <label for="name">First and Last Name</label>
-                        <input class="form-control" id="name" type="text" name="Name">
+                        <input class="form-control" id="name" type="text" name="Name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email Address</label>
-                        <input class="form-control" id="email" type="email" name="Email">
+                        <input class="form-control" id="email" type="email" name="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Contact Phone</label>
+                        <input class="form-control" id="phone" type="tel" name="Phone" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea class="form-control" id="message" name="Message"></textarea>
+                        <textarea class="form-control" id="message" name="Message" required></textarea>
                     </div>
                     <input class="btn btn-primary" type="submit" value="Submit" />
+                </form>
             </div>
-            </form>
         </section>
     </main>
 </body>
